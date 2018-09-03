@@ -13,7 +13,6 @@
     "test-mochaawesome": "nyc --reporter=html mocha app/_tests_/*.js --reporter mochawesome --exit",
     "test:e2e": "jest --runInBand e2e_tests/*.test.js",
     "e2etest": "testcafe puppeteer:no_sandbox e2e_tests/*.js --reporter html",
-    "lighthouse:ci": "lighthouse --output-path=report/lighthouse-report.html --quiet --chrome-flags='--headless --no-sandbox=true' //http:localhost:3000//",
     "runner": "e2e_tests/*.js",
     "jest": "jest --coverage app/__tests__/*.test.js",
     "lint": "eslint app/** e2e_tests/*",
