@@ -12,7 +12,7 @@
     "test": "npm run lint && npm run jest",
     "test-mochaawesome": "nyc --reporter=html mocha app/_tests_/*.js --reporter mochawesome --exit",
     "test:e2e": "jest --runInBand e2e_tests/*.test.js",
-    "e2etest": "testcafe puppeteer:no_sandbox e2e_tests/test.js --reporter html",
+    "e2etest": "testcafe puppeteer:no_sandbox e2e_tests/*.js --reporter html",
     "runner": "e2e_tests/*.js",
     "jest": "jest --coverage app/__tests__/*.test.js",
     "lint": "eslint app/** e2e_tests/*",
